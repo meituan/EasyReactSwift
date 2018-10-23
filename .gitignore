@@ -28,3 +28,6 @@ Pods/
 # Fastlane
 fastlane/report.xml
 fastlane/test_output/
+
+# codecov
+*.coverage.txt

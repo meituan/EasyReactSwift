@@ -1,0 +1,32 @@
+<type>: <subject>
+
+<body>
+
+
+<footer>
+
+
+#type value under below
+#    .feat :new feature 
+#    .fix :fix some bug
+#    .refactor :refactor some code
+#    .perf :optimization performance 
+#    .test :add more test case
+#
+
+#
+#subject :subject about this commit.
+# 
+#body : etail describe about this commit. Could be ignored.
+# 
+#footer :associate issue id or other infomation.
+#
+
+#      An Example
+
+#             
+#feat : Description method
+#
+#  add description to EZRNode
+#
+#  [#1]

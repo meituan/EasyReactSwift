@@ -14,7 +14,7 @@ end
 
 
 target 'macDemo' do
-    platform :osx, '10.9'
+    platform :osx, '10.10'
     pod 'EasyReactSwift', path: './'
 
     target 'macDemoTests' do

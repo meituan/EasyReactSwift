@@ -27,7 +27,9 @@ platform :ios do
       xcargs: 'ONLY_ACTIVE_ARCH=YES'
     )
     pod_lib_lint
-    codecov
+    codecov(
+      project_name: 'EasyReactSwift'
+    )
   end
 
   desc "Swift language lint"

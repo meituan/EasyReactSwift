@@ -14,6 +14,7 @@
  * limitations under the License.
  **/
 
-public func forTest2(value: Int) -> Int {
-    return value
+public enum EmptiableValue<Type> {
+    case empty
+    case value(_ value: Type)
 }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  **/
- 
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -23,6 +23,4 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
 }
-

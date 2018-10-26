@@ -13,23 +13,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  **/
- 
-import XCTest
-import Nimble
-import EasyReactSwift
 
-class Tests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+public class StorageNode<StoreType> {
+    public init(value: StoreType) {
+        privateValue = value
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    public var value: StoreType {
+        return privateValue
     }
 
-    func testExample() {
-        let value = forTest(value: 1)
-        expect(value) == 1
+    public var storeType: Any.Type {
+        return StoreType.self
+    }
+
+    internal var privateValue: StoreType
+}
+
+public class SettableStorageNode<StoreType> : StorageNode<StoreType>, ValueSettable {
+    public func set(value: StoreType) {
+        privateValue = value
     }
 }

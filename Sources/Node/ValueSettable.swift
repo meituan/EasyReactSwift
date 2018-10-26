@@ -14,6 +14,8 @@
  * limitations under the License.
  **/
 
-public func forTest(value: Int) -> Int {
-    return value
+public protocol ValueSettable {
+    associatedtype StoreType
+
+    func set(value: StoreType)
 }

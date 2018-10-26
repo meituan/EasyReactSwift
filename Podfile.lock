@@ -1,14 +1,17 @@
 PODS:
   - EasyReactSwift (0.0.1)
   - Nimble (7.3.1)
+  - SwiftLint (0.27.0)
 
 DEPENDENCIES:
   - EasyReactSwift (from `./`)
   - Nimble (~> 7.3.1)
+  - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Nimble
+    - SwiftLint
 
 EXTERNAL SOURCES:
   EasyReactSwift:
@@ -17,7 +20,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   EasyReactSwift: 1c421edfc192673db6b87d7c82e80da7d7149c04
   Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
+  SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: 37a19997184f391252bb81631018974a7f7dc8f3
+PODFILE CHECKSUM: 6365846ce31204bec1087d7067d0c2ca4c74a2f0
 
 COCOAPODS: 1.6.0.beta.2

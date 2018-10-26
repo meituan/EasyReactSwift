@@ -14,20 +14,33 @@
  * limitations under the License.
  **/
 
-import Cocoa
-
-class ViewController: NSViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+public class Node<StoreType> : StorageNode<EmptiableValue<StoreType>> {
+    public init(value: StoreType) {
+        super.init(value: .value(value))
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
+    public init() {
+        super.init(value: .empty)
+    }
+
+    public var empty: Bool {
+        if case .empty = value {
+            return true
         }
+        return false
     }
 
+    override public var storeType: Any.Type {
+        return StoreType.self
+    }
+}
+
+public class SettableNode<StoreType> : Node<StoreType>, ValueSettable {
+    public func set(value: StoreType) {
+        privateValue = .value(value)
+    }
+
+    public func clean() {
+        privateValue = .empty
+    }
 }

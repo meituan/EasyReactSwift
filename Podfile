@@ -5,6 +5,7 @@ project 'Example/Example'
 target 'iOSDemo' do
     platform :ios, '8.0'
     pod 'EasyReactSwift', path: './'
+    pod 'SwiftLint'
     
     target 'iOSDemoTests' do
       inherit! :search_paths
@@ -16,6 +17,7 @@ end
 target 'macDemo' do
     platform :osx, '10.10'
     pod 'EasyReactSwift', path: './'
+    pod 'SwiftLint'
 
     target 'macDemoTests' do
         inherit! :search_paths
